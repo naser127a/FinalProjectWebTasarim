@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Kodlama Ali Aslan Tarafından -->
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript ile Döviz Değişim Uygulaması</title>
+    <link rel="stylesheet" href="/css/finansStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome CDN Bağlantısı için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Döviz Değişim</header>
+      <form action="#">
+        <div class="amount">
+          <p>Miktar Girin</p>
+          <input type="text" value="1">
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p></p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="bayrak">
+              <select> <!-- Seçenek etiketleri JavaScript'ten eklenir --> </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p></p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/tr.png" alt="bayrak">
+              <select> <!-- Seçenek etiketleri JavaScript'ten eklenir --> </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Döviz kuru alınıyor...</div>
+        <button>Döviz Kuru Al</button>
+      </form>
+    </div>
+
+    <script src="/js/finans.js"></script>
+
+  </body>
+</html>

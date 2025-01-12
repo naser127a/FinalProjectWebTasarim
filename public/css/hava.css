@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #263746;
+    color: #fff;
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.hava-durumu-basligi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background: #1e1e1e;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.hava-durumu-arama {
+    position: relative;
+}
+
+.hava-durumu-arama i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.hava__birimleri {
+    font-size: 1.5rem;
+}
+
+.hava__birimleri span {
+    cursor: pointer;
+}
+
+.hava__birimleri span:first-child {
+    margin-right: 0.5rem;
+}
+
+.hava-durumu-sekli {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.zaman {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.hava-durumu-tahmini {
+    background: #1e1e1e;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.hava-durumu-icon img {
+    width: 100px;
+}
+
+.hava-sicakligi {
+    font-size: 1.75rem;
+}
+
+.hava-durumu-minmax {
+    display: flex;
+    justify-content: center;
+}
+
+.hava-durumu-minmax p {
+    font-size: 14px;
+    margin: 0.5rem;
+}
+
+.hava-durumu-bilgileri {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+}
+
+.hava-durumu-kutu {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+}
+
+.hava-durumu-kutu i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.hava-durumu-kutu p {
+    font-size: 14px;
+}
+
+.gunluk-tahmini{
+    background: #263746;
+    
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+.gunluk-kart{
+    color: #fff;
+}
+
+@media(max-width: 936px){
+    .container {
+        width: 90%;
+    }
+
+    .hava-durumu-basligi {
+        flex-direction: column;
+    }
+
+    .hava__birimleri {
+        margin-top: 1rem;
+    }
+    .gunluk-tahmini{
+        width: 90%;
+    }
+}
+
+
+@media(max-width: 400px){
+    .hava-durumu-bilgileri {
+        grid-template-columns: none;
+    }
+}

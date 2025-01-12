@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Uygulaması</title>
+    <link rel="stylesheet" href="/css/hava.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hava-durumu-basligi">
+            <form class="hava-durumu-arama">
+                <input type="text" placeholder="Şehir ara..." class="hava-durumu-arama-form">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form> 
+            <div class="hava__birimleri">
+                <span class="hava-durumu-derece-C">&#176C</span>
+            </div>
+        </div>
+        <div class="hava-durumu-sekli">
+            <h1 class="il"></h1>
+            <div class="zaman">
+            </div>
+            <div class="hava-durumu-tahmini"></div>
+            <div class="hava-durumu-icon">
+            </div>
+            <p class="hava-sicakligi">
+            </p>
+            <div class="hava-durumu-minmax">
+                <p>Min: 12&#176</p>
+                <p>Max: 16&#176</p>
+            </div>
+        </div>
+
+        <div class="hava-durumu-bilgileri">
+            <div class="hava-durumu-kutu">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <p>Hissedilen Sıcaklık</p>
+                    <p class="hissedilen-sicaklik">18&#176</p>
+                </div>
+            </div>
+            <div class="hava-durumu-kutu">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Nem</p>
+                    <p class="hava-nem">18%</p>
+                </div>
+            </div>
+            <div class="hava-durumu-kutu">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Rüzgar</p>
+                    <p class="hava-ruzgari">18 km/s</p>
+                </div>
+            </div>
+            <div class="hava-durumu-kutu">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Basınç</p>
+                    <p class="hava-durumu-basinc">1018 hPa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gunluk-tahmini">burada </div>
+
+    <script src="/js/hava.js"></script>
+</body>
+</html>

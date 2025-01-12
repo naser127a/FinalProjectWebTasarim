@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Nasser.site</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="main">
+        <header class="header">
+            <div class="countiner">
+                <div class="row">
+                    <div class="logo"><img src="/images/security.png" alt="logo" width="auto" height="40px"></div>
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <div class="item item-home fadeInLeft"><a class="alink" href="/" class="alink">home</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item item-about fadeInLeft"><a class="alink" href="#about">about</a></div>
+                            </li>
+                            <li>
+                                <div class="item item-skills fadeInLeft"><a class="alink" href="/duyurlar">Duyurlar</a></div>
+                            </li>
+                            <li>
+                                <div class="item item-experiences fadeInLeft"><a class="alink" href="/hava">Hava
+                                        Durumu</a></div>
+                            </li>
+                            <li>
+                                <div class="item item-portfolio fadeInLeft"><a class="alink" href="/takvim">Takvim</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item item-pricing fadeInLeft"><a class="alink" href="/finansel">Finansal</a></div>
+                            </li>
+                            <li>
+                                <div class="item item-contact fadeInLeft"><a class="alink" href="#footer">contact</a></div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="auth-section" class="fadeInLeft">
+                        <img src="/images/login.png" alt="Login" style="cursor: pointer;" width="auto" height="40px" id="login" name="login">
+                    </div>
+                   
+                    
+                    <div class="list"><i class="fa-solid fa-bars fa-2xl"></i></div>
+                    
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- header end  -->
+
+        <!-- banner Start  -->
+        <article class="banner">
+            <% if (successMessage) { %>
+                <span class="success" id="flash-message"><%= successMessage %></span>
+              <% } %>
+            <div class="banner-row">
+                <div class="me fadeInLeft">
+                    <span id="span">Merhaba</span>
+
+                    <div id="animated-text" class="text-container"></div>
+
+                    <h3 class="fadeInLeft">Web Developer</h3>
+                    <a class="alink fadeInLeft" href="mailto:02200201086@ogr.inonu.edu.tr"><i class="fa fa-envelope"></i>
+                        <span>02200201086@ogr.inonu.edu.tr</span></a><br>
+                    <a class="alink fadeInLeft" href="tel:+905393200362"><i class="fa-solid fa-phone"></i> <span>+90 539 320 0362</span></a><br>
+                    <a class="alink fadeInLeft" href="https://www.google.com/maps?q=Malatya,Türkiye"><i class="fa-solid fa-location-dot"></i><span>Malatya ,
+                            Türkiye</span></a><br>
+
+                    <div class="media">
+                        <a class="alink" href="https://www.facebook.com/profile.php?id=100012902611129"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+
+                        <a class="alink" href="https://x.com/naser_akraa3226"><i class="fa-brands fa-twitter"></i></a>
+
+                        <a class="alink" href="https://github.com/naser127a/FinalProjectWebTasarim"><i
+                                class="fa-brands fa-github"></i></a>
+
+                        <a class="alink" href="/index"><i class="fa-solid fa-globe fa-rotate-by"
+                                style="--fa-rotate-angle: 120deg;"></i></a>
+                    </div>
+
+                </div>
+                <div class="site-cv-image zoomInDown">
+                    <div class="image-cv">
+                        <img src="/images/developer.png" alt="Cv ">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="padding">
+        <article class="about" id="about">
+            <div class="padding-img fadeInUp"><img src="/images/ab-img.png" alt="image"></div>
+            <div class="about-me">
+                <div class="about-me-width">
+                    <h3 class="fadeInUp">Hakkımızda</h3>
+                    <p class="fadeInUp">Merhaba, ben bir Nasser, web geliştiricisiyim, Türkiye'de yaşıyorum. Web sitesi tasarımı ve
+                        yapımı ve özelleştirmesi konusunda deneyimim var. Ayrıca,</p>
+
+                    <ul class="fadeInUp">
+                        <li><span>Python</span></li>
+                        <li><span>html</span></li>
+                        <li><span>css</span></li>
+                        <li><span>SQL</span></li>
+                        <li><span>Flutter</span></li>
+                        <li><span>C#</span></li>
+                        <li><span>Javascript</span></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <h3>Ne yaparım</h3>
+            <div class="work-countiuner">
+                <div>
+                    <i class="fa fa-bullseye" style="color: rgba(150, 7, 202, 0.697);"></i>
+                    <h3>UI Design</h3>
+                    <p>bir web sitesi veya uygulamanın görsel tasarımından sorumludur. Amacı, kullanıcıların rahat bir
+                        şekilde etkileşimde bulunabileceği bir arayüz sunmaktır.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code" style="color: #ee7c11;"></i>
+                    <h3>Web Development</h3>
+                    <p>bir web sitesinin veya uygulamanın teknik altyapısını oluşturma işidir. <br>
+                        <q>Frontend </q> &
+                        <q>Backend </q>
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-object-ungroup" style="color: rgb(17, 124, 167);"></i>
+                    <h3>App Development</h3>
+                    <p>mobil veya masaüstü cihazlarda çalışan uygulamaları oluşturma sürecidir.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="featured">
+        <h2 style="text-align: center;">Duyurlar</h2>
+        <div class="featured-padding">
+            <div class="featured-grid-1">
+
+                <div class="image-featured">
+                    <img src="/images/news.png" alt="featured">
+                </div>
+
+                <div class="design">
+                    <h4 style="color:#ce110b;">SON DAKIKA</h4>
+                    <h3>HABERLER </h3>
+                    <h4>Haberler sayfayı ...</h4><br>
+                    <a href="/duyurlar" class="btn">
+                        Burada Tıkla
+                    </a><br><br>
+                    <q>haber akışını düzenli ve erişilebilir hale getirmek için oldukça etkili bir yapıdır</q>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="padding padd">
+        <div class="posts">
+            <h3>Dünyadan Haberler</h3>
+            <div class="post">
+                <div class="post-item"><img src="/images/pngegg.png" alt="b-3">
+                    <div>
+                        <h2><a href="/finansel" class="alink">Finansal Döviz Çevirme</a></h2><br>
+                        <p><b>Güncel kurlar üzerinden hesaplama yaparak doğru sonuçlara ulaşın.</b> </p>
+                        <q>Dünya çapında farklı para birimleri arasında kolay ve hızlı dönüşüm sağlayın.</q><br>
+                        <a href="/finansel" class="post-a">Burdan ...</a><br><br>
+                    </div>
+
+                </div>
+                <div class="post-item"><img src="/images/havadurumu.png" alt="b-2">
+                    <div>
+                        <h2><a href="/hava" class="alink">Güncel Dünya Hava Durumu</a></h2><br>
+                        <p><b>Seyahate çıkmadan önce detaylı hava raporlarını kontrol edin!</b> </p>
+                        <h2>🌦️</h2>
+                        <p>Ani hava değişimlerine karşı hazırlıklı olun.</p>
+                        <a href="/hava" class="post-a">Burada ...</a>
+                        <br style="height: 20px;">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="Experiences-padding">
+            <div class="education">
+                <a href="/takvim">
+                    <div>
+                        <h3 style="text-align: center;">Takvim & Etkinlikler</h3>
+                    </div>
+                </a>
+                <img src="/images/calendar.png" height="300px" alt="">
+                <div class="takvim-sayfam">
+                    <h2>"Takviminiz Sizi Bekliyor!"</h2><br>
+                    <p>
+                        Hoş geldiniz takvim bölümüne! Burada etkinliklerinizi ve olaylarınızı kolayca takip edebilir,
+                        düzenleyebilirsiniz. Her etkinlik belirli bir zaman dilimi ile tanımlanmıştır, bu yüzden
+                        takviminizi takip ettiğinizden ve günlük planlarınızı daha verimli bir şekilde organize
+                        ettiğinizden emin olun. Fırsatları kaçırmayın!</p>
+                </div>
+
+            </div>
+            <div class="work-experience">
+                <div>
+                    <h3 style="text-align: center;">Etiketlerim...</h3>
+                </div>
+
+                <div class="box-background">
+
+                    <% if (etikinliklerArr.length> 0) { %>
+                        <% const today=new Date(new Date().setHours(0, 0, 0, 0))%>
+                        <% console.log(today)%>
+
+
+                            <% etikinliklerArr.forEach(function(event) { %>
+                                <%let eventDate = new Date(new Date(event.year, event.month - 1, event.day).setHours(0, 0, 0, 0))%>
+                                <% console.log(eventDate)%>
+                                
+                                <% if (today> eventDate) {%>
+                                    <div class="art">
+                                        <h2>
+                                            <%= event.title %>
+                                        </h2>
+                                        <p class="event-time">
+                                            <%= event.time %>
+                                        </p>
+                                        <p class="event-date active">
+                                            <%= eventDate.toLocaleDateString("tr-TR") %>
+                                        </p>
+
+                                    </div>
+                                <% }else if (today.getFullYear() === eventDate.getFullYear() &&
+                                today.getMonth() + 1 === eventDate.getMonth() +1 &&
+                                today.getDate() === eventDate.getDate()) {%>
+                                    <div class="art">
+                                        <h2>
+                                            <%= event.title %>
+                                        </h2>
+                                        <p class="event-time active">
+                                            <%= event.time %>
+                                        </p>
+                                        <p class="event-date">
+                                            <%= eventDate.toLocaleDateString("tr-TR") %>
+                                        </p>
+
+                                    </div>
+                                    <%}else{%>
+                                        <div class="art">
+                                            <h2>
+                                                <%= event.title %>
+                                            </h2>
+                                            <p class="event-time">
+                                                <%= event.time %>
+                                            </p>
+                                            <p class="event-date">
+                                                <%= eventDate.toLocaleDateString("tr-TR") %>
+                                            </p>
+
+                                        </div>
+                                        <%}%>
+                                            <% }) %>
+                                                <% } else { %>
+                                                    <h2>Şu anda etkinlikler bulunmamaktadır</h2>
+                                                    <% } %>
+
+                                                        <div class="pagination">
+                                                            <!-- Previous Button -->
+                                                            <% if (pageNo> 1) { %>
+                                                                <a href="<%= '/Projem/' + (pageNo - 1) %>">&laquo;</a>
+                                                                <% } else { %>
+                                                                    <a class="disabled" href="#">&laquo;</a>
+                                                                    <% } %>
+
+
+
+                                                                        <!-- Page Numbers -->
+                                                                        <% for (let i=1; i <=Math.ceil(total / 5); i++)
+                                                                            { %>
+                                                                            <% if (pageNo==i) { %>
+                                                                                <a class="active"
+                                                                                    href="<%= '/Projem/' + i %>">
+                                                                                    <%= i %>
+                                                                                </a>
+                                                                                <% } else { %>
+                                                                                    <a href="<%= '/Projem/' + i %>">
+                                                                                        <%= i %>
+                                                                                    </a>
+                                                                                    <% } %>
+                                                                                        <% } %>
+
+                                                                                            <!-- Next Button -->
+                                                                                            <% if (pageNo <
+                                                                                                Math.ceil(total / 5)) {
+                                                                                                %>
+                                                                                                <a
+                                                                                                    href="<%= '/Projem/' + (pageNo + 1) %>">&raquo;</a>
+                                                                                                <% } else { %>
+                                                                                                    <a class="disabled"
+                                                                                                        href="#">&raquo;</a>
+                                                                                                    <% } %>
+                                                        </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="padding">
+        <h3>Contact Me</h3>
+    </div>
+
+
+    <div class="footer" id="footer">
+        <div class="contactme" id="contactme">
+            <div class="data">
+                <div class="my-data">
+                    <div class="my-data-border"><i class="fa fa-location-arrow"></i></div>
+                    <div>
+                        <h2>
+                            Adres
+                        </h2>
+                        <p>Malatya</p>
+                        <p>Türkiye</p>
+                    </div>
+
+                </div>
+
+
+                <div class="my-data">
+                    <div class="my-data-border"> <i class="fa fa-envelope"></i></div>
+                    <div>
+                        <h2>Mail</h2><a href="#" class="alink">02200201086@ogr.inonu.edu.tr</a>
+                        <p>02200201086@ogr.inonu.edu.tr</p>
+                    </div>
+
+                </div>
+                <div class="my-data">
+                    <div class="my-data-border"><i class="fa fa-phone"></i></div>
+                    <div>
+                        <h2>Telefon</h2><a href="" class="alink">(539)-320-0362</a>
+                        <p>(539)-320-0362</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <form class="send-data" action="Projem/send-data" method="post">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="10" required></textarea>
+                <button class="btn" type="submit">Mesaj Gönder</button>
+            </form>
+            
+        </div>
+        <div class="footer-section">
+            <div>All right reserved Nasser Akraa @2024</div>
+            <div class="media">
+                <a class="alink" href="https://www.facebook.com/profile.php?id=100012902611129"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+
+                <a class="alink" href="https://x.com/naser_akraa3226"><i class="fa-brands fa-twitter"></i></a>
+
+                <a class="alink" href="https://github.com/naser127a/FinalProjectWebTasarim"><i
+                        class="fa-brands fa-github"></i></a>
+
+                <a class="alink" href="index"><i class="fa-solid fa-globe fa-rotate-by"
+                        style="--fa-rotate-angle: 120deg;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <button class="java"><i class="fa-solid fa-snowflake"></i></button>
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/takvim.js"></script>
+</body>
+
+</html>

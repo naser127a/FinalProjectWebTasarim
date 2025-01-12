@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dinamik Takvim</title>
+    <link rel="stylesheet" href="/css/takvimStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- ana sayfa -->
+    <div class="container">
+        <!-- sol kismi -->
+        <div class="left">
+            <div class="takvim">
+
+                <div class="month">
+                    <i class="fa-solid fa-angle-left onceki"></i>
+                    <div class="tarih">kasım 2024</div>
+                    <i class="fa-solid fa-angle-right sonraki"></i>
+
+                </div>
+                <!-- gunler -->
+                <div class="hafta-gunleri">
+                    <div>Paz</div>
+                    <div>Pzt</div>
+                    <div>Sal</div>
+                    <div>Çar</div>
+                    <div>Per</div>
+                    <div>Cum</div>
+                    <div>Cmt</div>
+                </div>
+                <!-- ayda gunleri 31-29....... -->
+                <div class="gunler"></div>
+                <!-- aya gitmek için -->
+                <div class="bugune-git">
+                    <div class="git">
+                        <input type="text" placeholder="aa/yyyy" class="tarih-input" />
+                        <button class="git-btn">Git</button>
+                    </div>
+                    <button class="bugun-btn">Bugün</button>
+                </div>
+            </div>
+        </div>
+        <!-- sag kısmı-->
+        <div class="right">
+            <div class="bugun-tarihi">
+                <div class="etkinlik-gunu">Sal</div>
+                <div class="etkinlik-tarihi">12 kasım 2024</div>
+            </div>
+           
+              
+            <div class="etikinlikler">
+                
+                  
+                <% if (messages('success')) { %>
+                    <div class="alert alert-success">
+                        <%= messages('success') %>
+                    </div>
+                    <% } %>
+                <% if (messages('error')) { %>
+                    <div class="alert alert-danger">
+                        <%= messages('error') %>
+                    </div>
+                    <% } %>
+
+                    
+            </div>
+            <form class="etkinlik-ekle-kapagi" action="/takvim/addEvent" method="post">
+                <div class="etkinlik-basligi-ekle">
+                    <div class="title">Etkinlik Ekle</div>
+                    <i class="fas fa-times kapat"></i>
+                </div>
+                <div class="etkinlik-ekle-body">
+                    <div class="etkinlik-ekle-input">
+                        <input type="text" placeholder="Etkinlik Adı" class="etkinlik-adi" name="etkinlikadi"
+                            required />
+                    </div>
+                    <div class="etkinlik-ekle-input">
+                        <input type="text" placeholder="Etkinlik Başlangıç Saati" class="etkinlik-zamani-baslangic"
+                            name="etkinlikzamanibaslangic" required />
+                    </div>
+                    <div class="etkinlik-ekle-input">
+                        <input type="text" placeholder="Etkinlik Bitiş Saati" class="etkinlik-zamani-bitis"
+                            name="etkinlikzamanibitis" required />
+                    </div>
+                </div>
+                <div class="etkinlik-ekle-footer">
+                    <button class="etkinlik-ekle-btn" type="button">Kaydet</button>
+                </div>
+            </form>
+        </div>
+        <button class="etkinlik-ekle">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <div class="acik-kode">
+        <p>
+            &copy;2024 Kod:
+            <a href="https://github.com/naser127a/FinalProjectWebTasar-m" target="_blank">Açık Kaynak Kod</a>
+        </p>
+    </div>
+
+    <script src="/js/takvim.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>

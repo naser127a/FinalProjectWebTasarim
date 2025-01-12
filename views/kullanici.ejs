@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/kullanici.css">
+    <title>Kullanici Giriş Sayfası</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <span class="errors" id="flash-message-register"></span>
+        <div class="form sign-up" id="register">
+            
+            <form action="/kullanici/register" method="POST">
+                <h1>Hesap Oluştur</h1>
+                <div class="sosyal-media-sembol">
+                    <a href="#" class="sembol"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="sembol"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="sembol"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="sembol"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>veya kayıt için e-posta adresinizi kullanın</span>
+                <input type="text" placeholder="İsim" name="name" required>
+                <input type="email" placeholder="E-posta" name="email" required>
+                <input type="password" placeholder="Şifre" name="password" required>
+
+                <button>Kayıt Ol</button>
+            </form>
+        </div>
+        <div class="form sign-in" id="login">
+            <span class="errors" id="flash-message"></span>
+            <% if (errorMessage) { %>
+                <%console.log(errorMessage)%>
+                <span class="errors" id="flash-message"><%= errorMessage %></span>
+              <% } %>
+            <% if (registerMessage) { %>
+                <%console.log(registerMessage)%>
+                <span class="errors" id="flash-message-sn"><%= registerMessage %></span>
+              <% } %>
+            <form action="/kullanici/login" method="POST">
+                <h1>Giriş Yap</h1>
+                <div class="sosyal-media-sembol">
+                    <a href="#" class="sembol"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="sembol"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="sembol"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="sembol"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>veya e-posta adresi ve şifrenizi kullanın</span>
+                <input type="email" placeholder="E-posta" name="email" required>
+                <input type="password" placeholder="Şifre" name="password" required>
+
+                <a href="#">Şifrenizi mi Unuttunuz?</a>
+                <button>Giriş Yap</button>
+            </form>
+        </div>
+        <div class="gecis-div">
+            <div class="gecis">
+                <div class="paneli-degis sola-degistir">
+                    <h1>Tekrar Hoş Geldiniz!</h1>
+                    <p>Sitenin tüm özelliklerini kullanmak için kişisel bilgilerinizi girin</p>
+                    <button class="hidden" id="giris">Giriş Yap</button>
+                </div>
+                <div class="paneli-degis saga-degistir">
+                    <h1>Merhaba!</h1>
+                    <p>Sitenin tüm özelliklerini kullanmak için kayıt olun</p>
+                    <button class="hidden" id="kayit-ol">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/kullanici.js"></script>
+
+</body>
+
+</html>
